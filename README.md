@@ -1,2 +1,2 @@
-# loan_analyzer
+# loan_qualifier
 Ch2
