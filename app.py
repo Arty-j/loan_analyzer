@@ -99,28 +99,33 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     bank_data_filtered = filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
 
     print(f"Found {len(bank_data_filtered)} qualifying loans")
-    print (bank_data_filtered)
+    
 
     return bank_data_filtered
 
 
-
+    # @TODO: Complete the usability dialog for savings the CSV Files.
 def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file."""
     save_loans = questionary.text("Would you like to save a your qualifying loans to a spreadsheet? (y/n)").ask()
-    if save_loans = "y":
+    if save_loans == "y":
         
         csvpath = Path("qualifying_loans_list.csv")
-    with open(csvpath,'w', newline='') as csvfile:
-        csvwriter = csv.writer(csvfile)
-        for row in qualifying_loans:
-            csvwriter.writerow(row)
+        with open(csvpath,'w', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile)
+            for row in qualifying_loans:
+                csvwriter.writerow(row)
     else:
-        print("Thank you for using the bank loan qualifier app. This app will now exit.")
+        verify =  questionary.text("To verify, please enter 'n' once again if you DO NOT wish to save your qualifying loans list.").ask()
+        if verify == "n":
+                print("Thank you for using the bank loan qualifier app. This app will now exit.")
+                sys.exit()
+        else:
+            save_qualifying_loans(qualifying_loans)
     """Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
+
     
 
 
@@ -138,7 +143,7 @@ def run():
     qualifying_loans = find_qualifying_loans(
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
-
+    print(qualifying_loans)
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
 
