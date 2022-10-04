@@ -100,24 +100,29 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     print(f"Found {len(bank_data_filtered)} qualifying loans")
     
-
     return bank_data_filtered
 
-"""Saves the qualifying loans to a CSV file."""
-def save_csv(qualifying_loans):
-    csvpath = Path("qualifying_loans_list.csv")
-    with open(csvpath,'w', newline='') as csvfile:
-            csvwriter = csv.writer(csvfile)
-            for row in qualifying_loans:
-                csvwriter.writerow(row)
+
 
     # @TODO: Complete the usability dialog for savings the CSV Files.
 def save_qualifying_loans(qualifying_loans):
-   
-    save_loans = questionary.text("Would you like to save a your qualifying loans to a spreadsheet? (y/n)").ask()
-    if save_loans == "y":
-        save_csv()
-        print("Your qualifying loans are listed in a cvs file called 'qualifying_loans_list'.")
+   """Prompts user 'y/n' to save qualifying loans to a csv file or exit the program.
+    Verifies user imput and allows for the fuction to run again if a 'y/n' is changed or not entered. 
+    Allows user to elect a file name for their csv file.
+
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    
+    If/else:
+        statements will re-run the function if a negative response is not entered and verified
+
+    """
+    save_loans_resp = questionary.text("Would you like to save a your qualifying loans to a spreadsheet? (y/n)").ask()
+    if save_loans_resp == "y":
+        print ("Your qualifying loans list will be saved to a csv file saved as your last name and the date.")
+        csv_file_name = questionary.text("Please type your last name, followed by the date, separated by a dash. Example: 'Smith-02-04-22'").ask()
+        save_csv(qualifying_loans, csv_file_name)
+        print(f"Your qualifying loans are listed in a cvs file called '{csv_file_name}'.csv")
     else:
         verify =  questionary.text("To verify, please enter 'n' once again if you DO NOT wish to save your qualifying loans list.").ask()
         if verify == "n":
@@ -125,9 +130,20 @@ def save_qualifying_loans(qualifying_loans):
                 sys.exit()
         else:
             save_qualifying_loans(qualifying_loans)
-    """Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
+ 
+    
+def save_csv(qualifying_loans, csv_file_name):
+    """Saves the qualifying loans to a CSV file, with the file name elected by the user.
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans
+        csv_file_name (var): the user elected file name
     """
+    csv_file_name = csv_file_name + ".csv"
+    csvpath = Path(csv_file_name)
+    with open(csvpath,'w', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile)
+            for row in qualifying_loans:
+                csvwriter.writerow(row)
 
     
 
@@ -146,7 +162,7 @@ def run():
     qualifying_loans = find_qualifying_loans(
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
-    print(qualifying_loans)
+    
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
 
