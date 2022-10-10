@@ -1,8 +1,11 @@
-# Loan Qualifier Application
-This application allows a user to enter basic financial data and compare it to a selected database of bank loans.  With simple, easy to answer questions about their debt, income, desired loan amount, and home value this loan can filter for loans they qualify for, and save them to a csv file. The user can elect the csv file name and use it for reference or conversion to another file type to share with others.
-This application is used as a learning project in conjuction with the UC Berkeley FinTech Bootcamp.
+# **Loan Qualifier Application**
+---
 
-##Technologies
+**This application allows a user to enter basic financial data and compare it to a user selected data file of bank loans.  With simple, easy to answer questions about debt, income, desired loan amount, and asset value, this application can filter for qualifing loans listed in the data file. The user then has the choice to save the qualifying loans to a csv file for future reference or sharing with others.**
+
+*This application is used as a learning project in conjuction with the UC Berkeley FinTech Bootcamp.*
+
+##**Technologies**
 This project leverages Python 3.7 with the following packages:
  fire - for the commmand line interface and entry-point
  questionary - for interactive user prompts
@@ -12,15 +15,25 @@ This project leverages Python 3.7 with the following packages:
 
 ##Installation Guide
 Before running the application first install the following dependencies.
-pip install fire <code>
-pip install questionary <code>
+'''pip install fire
+pip install questionary'''
 
-##Usage
-Tuse use the loan qualifier application, clone the reposity and run the app.py
-python app.py <code>
+The following libraries should also be imported for proper execution of this program
+'''from pathlib import Path
+import cvs
+import sys'''
 
-Upon launching the app.py app you will be asked to enter the location of the csv file with the compiled loan data you wish to use.  An example file called "daily_rate_sheet.csv" has been included in the project files, within the data folder.
-<photo of image of folder structure with data folder and daily rate sheet circled>
+This program is modulized into the following folders:
+[Main Program]('./app.py') 
+[Data Files]('./data') - example data file of bank loans in csv format
+[Qualifiers-executable function files]('./qualifiers') - filters, claculators, csv import files
+
+##**Usage**
+To use use the loan qualifier application, clone the reposity and run the app.py
+'''python app.py'''
+
+Upon launching the '''app.py''' app you will be asked to enter the location of the csv file from which you want to pull bank loan criteria data. An example file called "daily_rate_sheet.csv" has been included in the project files, within the data folder to use as an example of how the program runs.
+![image of folder structure with data folder and daily rate sheet circled](/var/folders/4d/z57_76td03j5db8dyv4pwsvr0000gn/T/TemporaryItems/NSIRD_screencaptureui_2gK6kQ/Screen Shot 2022-10-09 at 3.31.02 PM.png)
 
 The application with then prompt the user to enter financial data related to loan qualification.
 <image of terminal output with data entered>

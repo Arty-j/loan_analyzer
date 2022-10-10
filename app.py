@@ -105,33 +105,28 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 
     # @TODO: Complete the usability dialog for savings the CSV Files.
-def save_qualifying_loans(qualifying_loans):
-   """Prompts user 'y/n' to save qualifying loans to a csv file or exit the program.
-    Verifies user imput and allows for the fuction to run again if a 'y/n' is changed or not entered. 
-    Allows user to elect a file name for their csv file.
 
+"""Prompts user 'y/n' to save qualifying loans to a csv file or exit the program.
+   If answer == True, allows user to elect a file name for their csv file.
+   If answer == False, thanks the user and exits the program
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
-    
     If/else:
-        statements will re-run the function if a negative response is not entered and verified
-
-    """
-    save_loans_resp = questionary.text("Would you like to save a your qualifying loans to a spreadsheet? (y/n)").ask()
-    if save_loans_resp == "y":
+        statements will re-run the function if a negative response is not entered and verified"""
+ 
+def save_qualifying_loans(qualifying_loans):
+    if questionary.confirm("Would you like to save a your qualifying loans to a spreadsheet? (y/n)").ask():
         print ("Your qualifying loans list will be saved to a csv file saved as your last name and the date.")
         csv_file_name = questionary.text("Please type your last name, followed by the date, separated by a dash. Example: 'Smith-02-04-22'").ask()
         save_csv(qualifying_loans, csv_file_name)
         print(f"Your qualifying loans are listed in a cvs file called '{csv_file_name}'.csv")
     else:
-        verify =  questionary.text("To verify, please enter 'n' once again if you DO NOT wish to save your qualifying loans list.").ask()
+        verify = questionary.text("To verify, please enter 'n' once again if you DO NOT wish to save your qualifying loans list.").ask()
         if verify == "n":
-                print("Thank you for using the bank loan qualifier app. This app will now exit.")
-                sys.exit()
+            print("Thank you for using the bank loan qualifier app. This app will now exit.")
+            sys.exit()
         else:
-            save_qualifying_loans(qualifying_loans)
- 
-    
+            save_qualifying_loans(qualifying_loans)    
 def save_csv(qualifying_loans, csv_file_name):
     """Saves the qualifying loans to a CSV file, with the file name elected by the user.
     Args:
