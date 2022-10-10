@@ -104,8 +104,6 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 
 
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-
 """Prompts user 'y/n' to save qualifying loans to a csv file or exit the program.
    If answer == True, allows user to elect a file name for their csv file.
    If answer == False, thanks the user and exits the program

@@ -1,0 +1,418 @@
+ 598  cd Desktop/UCB-VIRT-FIN-PT-09-2022-U-B
+  599  git pull
+  600  cd Desktop/FinTech-Workspace
+  601  cd GitFiles
+  602  ls
+  603  cd Arty-j
+  604  ls
+  605  cd GitHub
+  606  ls
+  607  cd Desktop/FinTech-Workspace
+  608  ls
+  609  Arty-j
+  610  cd Arty-j
+  611  ls
+  612  cd FinTech_Challenge_2
+  613  git init
+  614  git clone git@github.com:Arty-j/FinTech_Challenge_2.git
+  615  git status
+  616  git add .
+  617  git status
+  618  git commit -m "Terminalinitial commit"
+  619  git push
+  620  conda activate dev
+  621  cd Documents/Bootcamp
+  622  ls
+  623  cd Challenges
+  624  ls
+  625  cd My\ Copy\ Challenge\ 
+  626  cd My_Copy_Challenge
+  627  ls
+  628  cd My Copy Challenge 2
+  629  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  630  conda activate dev
+  631  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  632  cd De
+  633  cd Desktop
+  634  ls
+  635  cd FinTech-
+  636  cd FinTech-Workspace
+  637  ls
+  638  cd Arty-j
+  639  ls
+  640  cd FinTech_Challenge_2
+  641  conda activate dev
+  642  ls
+  643  cd loan_qualifier_app
+  644  ls
+  645  python app.py
+  646  python app.py
+  647  cd Desktop
+  648  cd FinTech-Workspace
+  649  ls
+  650  cd GitHub
+  651  ls
+  652  cd Challenge_2
+  653  git status
+  654  git add .
+  655  git status
+  656  git commit -m "Initial commit"
+  657  git status
+  658  git push
+  659  git push git@github.com:Arty-j/FinTech_Challenge_2.git
+  660  git clone git@github.com:Arty-j/loan_analyzer.git
+  661  git push
+  662  clear
+  663  git status
+  664  git add .
+  665  git rm --chached loan_analyzer
+  666  git rm --git rm --cached loan_analyzer
+  667  cd Desktop
+  668  ls
+  669  cd FinTech-Workspace
+  670  ls
+  671  cd GitHub
+  672  ls
+  673  cd Challenge_2
+  674  git status
+  675  cd Desktop/FinTech-Workspace
+  676  ls
+  677  cd GitHub
+  678  ls
+  679  cd loan_qualifier_app
+  680  git status
+  681  cd ..
+  682  git status
+  683  cd loan_qualifier_app
+  684  git status
+  685  cd ..
+  686  git status
+  687  git add .
+  688  git rm --cached FinTech_Challenge_1
+  689  git status
+  690  cd Desktop
+  691  cd ..
+  692  cd ..
+  693  cd FinTech_Challenge_1
+  694  git status
+  695  clear
+  696  cd ..
+  697  cd FinTech
+  698  cd FinTech-Workspace
+  699  cd ..
+  700  cd FT
+  701  cd FT-Workspace
+  702  ls
+  703  cd GitHub
+  704  git status
+  705  cd loan_qualifier_app
+  706  git clone git@github.com:Arty-j/loan_qualifier.git
+  707  code .
+  708  git status
+  709  git add .
+  710  git rm --cached loan_qualifier_app/loan_qualifier
+  711  clear
+  712  conda activate dev
+  713  conda list pandas
+  714  conda list jupiterlab
+  715  cd ~
+  716  conda list jupiterlab
+  717  conda deactivate
+  718  conda remove --name dev --all
+  719  conda info --envs
+  720  conda update conda
+  721  conda update anaconda
+  722  conda create -n dev python=3.7 anaconda
+  723  conda info --envs
+  724  conda activate dev
+  725  conda list pandas
+  726  conda list jupyterlab
+  727  jupyter lab
+  728  conda deactivate
+  729  /Users/evieair/opt/anaconda3/bin/jupyter_mac.command ; exit;
+  730  cd Documents
+  731  cd Bootcamp
+  732  list
+  733  ls
+  734  cd BCS\ Modules
+  735  ls
+  736  cd 3
+  737  cd 3-Analysis\ Pandas
+  738  ls
+  739  cd 01_Importing_the_VIX
+  740  ls
+  741  cd Unsolved
+  742  ls
+  743  conda activate dev
+  744  jupyter lab
+  745  jupyter lab
+  746  conda activate dev
+  747  cd Documents/BootCamp/BCS\ Modules
+  748  ls
+  749  cd 3-Analysis\ Pandas
+  750  ls
+  751  cd 03_IPO_Excitement
+  752  jupyter lab
+  753  /Users/evieair/opt/anaconda3/bin/jupyter_mac.command ; exit;
+  754  cd Desktop
+  755  ls
+  756  cd FT-Workspace
+  757  ls
+  758  cd GitHub
+  759  ls
+  760  cd loan_qualifier
+  761  ls
+  762  cd loan_qualifier_app
+  763  ls
+  764  cd ..
+  765  cd ..
+  766  cd Desktop
+  767  cd FT-Workspace
+  768  cd GitHub
+  769  ls
+  770  cd loan_qualifier
+  771  ls
+  772  git status
+  773  dit add
+  774  git add .
+  775  git status
+  776  git commit -m "Initial Commit"
+  777  git push
+  778  conda activate dev
+  779  cd Desktop/FT-Workspace
+  780  cd GitHub
+  781  ls
+  782  cd loan_qualifier
+  783  ls
+  784  python app.py
+  785  python app.py
+  786  pip install fire
+  787  python app.py
+  788  pip install questionary
+  789  python app.py
+  790  python app.py
+  791  python app.py
+  792  python app.py
+  793  python app.py
+  794  ls
+  795  /usr/bin/python3 /Users/evieair/Documents/BootCamp/Practice/test.py
+  796  /usr/bin/python3 /Users/evieair/Documents/BootCamp/Practice/test.py
+  797  /usr/bin/python3 /Users/evieair/Documents/BootCamp/Practice/test.py
+  798  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  799  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  800  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  801  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  802  conda activate dev
+  803  cd Desktop
+  804  cd FT-Workspace
+  805  list
+  806  ls
+  807  cd GitHub
+  808  ls
+  809  cd loan_qualifier
+  810  python app.py
+  811  python app.py
+  812  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  813  /usr/bin/python3 "/Users/evieair/Documents/BootCamp/Challenges/My Copy Challenge 2/loan_qualifier_app/app.py"
+  814  clear
+  815  python app.py
+  816  python app.py
+  817  python app.py
+  818  cd Desktop
+  819  cd FT-Workspace
+  820  cd GitHub
+  821  ls
+  822  cd loan_qualifier
+  823  git status
+  824  git add .
+  825  git status
+  826  code .
+  827  cd Desktop
+  828  cd FT-Workspace
+  829  cd GitHub
+  830  ls
+  831  c loan_qualifier
+  832  cd loan_qualifier
+  833  git status
+  834  git add README.md
+  835  git add app.py
+  836  git status
+  837  git commit -m "Updated functionality of save_qualifying-loans, and Readme file"
+  838  git push
+  839  conda activate dev
+  840  python -m ipykernel install --user --name dev --display-name "Python (dev)"
+  841  jupyter lab
+  842  /usr/bin/python3 /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  843  conda activate dev
+  844  ]cd ~
+  845  cd ~
+  846  cd Desktop
+  847  cd FT-Workspace
+  848  ls
+  849  cd GitHub
+  850  ls
+  851  cd loan_qualifier
+  852  git status
+  853  git add app.py
+  854  git status
+  855  git commit -m "Added function to write data to csv, save_qualifing_loans()"
+  856  git status
+  857  git push
+  858  /usr/bin/python3 /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  859  pip import fire
+  860  pip install fire
+  861  /usr/bin/python3 /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  862  python app.py
+  863  /usr/bin/python3 /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  864  /usr/bin/python3 /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  865  pip install fire
+  866  /Users/evieair/opt/anaconda3/envs/dev/bin/python /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  867  /Users/evieair/opt/anaconda3/envs/dev/bin/python /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  868  /Users/evieair/opt/anaconda3/envs/dev/bin/python /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  869  jupyter lab
+  870  conda activate dev
+  871  cd Desktop/FT-Workspace
+  872  cd GitHub
+  873  ls
+  874  cd loan_qualifier
+  875  git status
+  876  git add app.py
+  877  git commit -m "Added usability dialogue and loops to save_qualifying_loans function"
+  878  git status
+  879  git push
+  880  git add app.py
+  881  git commit -m "created save_csv funtion seperated saving csv from questionary function for saving the file"
+  882  git add app.py
+  883  git status
+  884  git status
+  885  git add app.py
+  886  git commit -m "Updated docstrings for new functions"
+  887  git status
+  888  git add README.md
+  889  git commit -m "Updated READMEwith text and notes for future code and image inserts"
+  890  cd Desktop
+  891  cd UCB-VIRT-FIN-PT-09-2022-U-B
+  892  git pull
+  893  conda activate dev
+  894  jupyter lab
+  895  cd Desktop
+  896  cd UCB-VIRT-FIN-PT-09-2022-U-B
+  897  git pull
+  898  jupyter lav
+  899  jupyter lab
+  900  cd Desktop
+  901  ls
+  902  cd FT-Workspace
+  903  cd GitHub
+  904  cd loan_qualifier
+  905  ls
+  906  cd qualifier
+  907  ls
+  908  cd Desktop
+  909  ls
+  910  cd FT-Workspace
+  911  cd GitHub
+  912  git clone git@github.com:Arty-j/Arbitrage_opportunities.git
+  913  ls
+  914  git status
+  915  git add .
+  916  git rm --cached Arbitrage_opportunities
+  917  ls
+  918  cd Arbitrage_opportunities
+  919  ls
+  920  git status
+  921  git add .
+  922  git status
+  923  git commit -m "Initial Commit"
+  924  git push
+  925  git status
+  926  git add crypto_arbitrage.ipynb
+  927  git commit -m "Completed dataframe creation and cleaning"
+  928  git push
+  929  git status
+  930  git add .
+  931  git status
+  932  git commit -m "Analyzed the data"
+  933  git push
+  934  git status
+  935  git add .
+  936  git commit -m "Arbitrage claculated for Early Date"
+  937  git push
+  938  git status
+  939  git add .
+  940  git commit -m "Finished Arbitrage calculations of last two datetime sets"
+  941  git status
+  942  git push
+  943  clear
+  944  conda activate dev
+  945  cd Desktop
+  946  cd ..
+  947  ls
+  948  cd loan_qualifier
+  949  python app.py
+  950  python app.py
+  951  jupyter lav
+  952  jupyter lab
+  953  conda activate dev
+  954  cd Desktop
+  955  cd FT-Workspace
+  956  cd GitHub
+  957  l
+  958  ls
+  959  cd loan_qualifier
+  960  ls
+  961  python app.py
+  962  conda activate 
+  963  python app.py
+  964  conda activate dev
+  965  conda activate base
+  966  /Users/evieair/opt/anaconda3/envs/dev/bin/python /Users/evieair/Desktop/FT-Workspace/GitHub/loan_qualifier/app.py
+  967  git status
+  968  conda activate dev
+  969  cd Desktop
+  970  cd FT-Workspace
+  971  cd GitHub
+  972  ls
+  973  cd loan
+  974  cd loan_qualifier
+  975  code .
+  976  python app.py
+  977  ls
+  978  python test.py
+  979  python test.py
+  980  conda activate dev
+  981  import fire
+  982  cd D
+  983  cd Desktop
+  984  cd FT-Workspace
+  985  cd GitHub
+  986  cd loan_qualifier
+  987  ls
+  988  python app.py
+  989  python app.py
+  990  conda activate dev
+  991  cd Desktop
+  992  cd FT-Workspace/GitHub
+  993  ls
+  994  cd loan_qualifier
+  995  python app.py
+  996  python app.py
+  997  python app.py
+  998  python app.py
+  999  app.py
+ 1000  python app.py
+ 1001  cd Desktop/FT-Workspace
+ 1002  cd GitHub/loan_qualifier
+ 1003  git status
+ 1004  git add .
+ 1005  git commit -m "Changed if else statement to quesitonary.confirm for save csv function"
+ 1006  git push
+ 1007  git status
+ 1008  git add .
+ 1009  git commit -m "Added syntax and images to README"
+ 1010  git status
+ 1011  git push
+ 1012  cd ..
+ 1013  cd loan qualif
+ 1014  ls
+ 1015  cd loan_qualifier
